@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "name": "aic-yumbisye-township",
+  "routes": [
+    {
+      "src": "/about",
+      "dest": "/pages/about.html"
+    },
+    {
+      "src": "/ministries",
+      "dest": "/pages/ministries.html"
+    },
+    {
+      "src": "/sermons",
+      "dest": "/pages/sermons.html"
+    },
+    {
+      "src": "/events",
+      "dest": "/pages/events.html"
+    },
+    {
+      "src": "/gallery",
+      "dest": "/pages/gallery.html"
+    },
+    {
+      "src": "/youtube",
+      "dest": "/pages/youtube.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/pages/contact.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    }
+  ]
+}

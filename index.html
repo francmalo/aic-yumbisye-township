@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home — AIC Yumbisye Township</title>
+<meta name="description" content="Africa Inland Church Yumbisye Township — Where faith meets community."/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+.hero{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 1.5rem;max-width:820px;}
+.hdots{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:.5rem;}
+.hdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.3);border:none;cursor:pointer;transition:all .3s;padding:0;}
+.hdot.on{background:#fff;width:22px;border-radius:4px;}
+.hscroll{position:absolute;bottom:5.5rem;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.45);font-size:1.1rem;text-decoration:none;animation:bop 2s infinite;}
+@keyframes bop{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+@keyframes fup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hw{display:inline-block;opacity:0;animation:fup .7s forwards;}
+.stat-num{font-family:Cinzel,serif;font-size:2rem;font-weight:600;color:#fff;line-height:1;}
+.stat-lbl{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:.25rem;}
+.teaser-more{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--red);text-decoration:none;margin-top:.75rem;transition:gap .2s;}
+.teaser-more:hover{gap:.6rem;}
+.min-icon{width:3rem;height:3rem;border-radius:.75rem;display:flex;align-items:center;justify-content:center;font-size:1.3rem;background:var(--red-s);color:var(--red);transition:all .3s;flex-shrink:0;}
+.card:hover .min-icon{background:var(--red);color:#fff;}
+.play-btn{width:2.5rem;height:2.5rem;border-radius:50%;background:var(--red);border:none;cursor:pointer;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .25s;flex-shrink:0;}
+.play-btn:hover{transform:scale(1.1);box-shadow:0 4px 14px rgba(185,28,28,.4);}
+</style>
+</head>
+<body><div id="nav-placeholder"></div>
+<nav id="nav" class="dark-hero">
+  <div class="bar">
+    <div class="inner">
+      <a href="index.html" class="nav-logo">
+        <img src="data:image/jpeg;base64,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" alt="AIC Logo" class="logo-img"/>
+        <div><div class="logo-name">AIC YUMBISYE</div><div class="logo-sub">Township</div></div>
+      </a>
+      <nav class="nl">
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/ministries.html">Ministries</a>
+        <a href="pages/sermons.html">Sermons</a>
+        <a href="pages/events.html">Events</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/youtube.html">YouTube</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="#" onclick="openP();return false;" class="nav-pill">🙏 Prayer</a>
+      </nav>
+      <button id="burger" aria-label="Menu">
+        <svg id="burger" width="22" height="16" viewBox="0 0 22 16" fill="none">
+          <rect y="0" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="7" width="16" height="2" rx="1" fill="currentColor"/>
+          <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mob-nav">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/ministries.html">Ministries</a>
+      <a href="pages/sermons.html">Sermons</a>
+      <a href="pages/events.html">Events</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/youtube.html">YouTube</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="#" onclick="openP();return false;" class="mob-pill">🙏 Prayer Request</a>
+    </div>
+  </div>
+</nav>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hslide s1 on"></div>
+  <div class="hslide s2"></div>
+  <div class="hslide s3"></div>
+  <div class="hero-content">
+    <p style="font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:1.1rem;">
+      <span class="hw">✝ Welcome to Our Church Family</span>
+    </p>
+    <h1 style="font-size:clamp(3rem,8vw,5.8rem);color:#fff;margin-bottom:1.1rem;line-height:1.06;">
+      <span class="hw">Africa&nbsp;</span><span class="hw">Inland&nbsp;</span><span class="hw" style="color:var(--red);">Church</span><br/>
+      <span class="hw" style="font-style:italic;font-size:.62em;color:rgba(255,255,255,.88);">Yumbisye Township</span>
+    </h1>
+    <p class="hw" style="color:rgba(255,255,255,.72);font-size:1.05rem;max-width:540px;margin:0 auto 2rem;line-height:1.8;">
+      A community of faith, hope, and love — rooted in the Word of God, reaching the world with the Gospel of Christ.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.75rem;">
+      <a href="pages/about.html" class="btn btn-red hw">Discover More</a>
+      <a href="pages/sermons.html" class="btn btn-dark hw">Watch Sermons</a>
+    </div>
+    <div class="hw" style="display:inline-block;">
+      <p style="color:rgba(255,255,255,.4);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.65rem;">Next Sunday Service</p>
+      <div class="cd-wrap" style="justify-content:center;">
+        <div class="cd-box"><div class="cd-n" id="cdd">00</div><div class="cd-l">Days</div></div>
+        <div class="cd-box"><div class="cd-n" id="cdh">00</div><div class="cd-l">Hrs</div></div>
+        <div class="cd-box"><div class="cd-n" id="cdm">00</div><div class="cd-l">Min</div></div>
+        <div class="cd-box"><div class="cd-n" id="cds">00</div><div class="cd-l">Sec</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hdots">
+    <button class="hdot on" aria-label="1"></button>
+    <button class="hdot" aria-label="2"></button>
+    <button class="hdot" aria-label="3"></button>
+  </div>
+  <a href="#about" class="hscroll"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="bg-red-full">
+  <div class="wrap" style="padding:2.25rem 1.5rem;">
+    <div class="g4" style="text-align:center;">
+      <div><div class="stat-num">1984</div><div class="stat-lbl">Founded</div></div>
+      <div><div class="stat-num">500+</div><div class="stat-lbl">Members</div></div>
+      <div><div class="stat-num">12+</div><div class="stat-lbl">Ministries</div></div>
+      <div><div class="stat-num">7</div><div class="stat-lbl">Weekly Services</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="sec bg-white" id="about">
+  <div class="wrap">
+    <div class="g2" style="align-items:center;gap:4rem;">
+      <div class="reveal-l" style="position:relative;">
+        <img src="images/church-cross.jpg" alt="Church" style="width:100%;height:420px;object-fit:cover;border-radius:var(--r-lg);"/>
+        <div style="position:absolute;bottom:-1rem;right:-1rem;background:var(--red);color:#fff;border-radius:var(--r-lg);padding:1.25rem 1.5rem;text-align:center;box-shadow:0 8px 28px rgba(185,28,28,.35);">
+          <div style="font-family:Cinzel,serif;font-size:1.6rem;font-weight:600;">40+</div>
+          <div style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-top:.2rem;">Years of Grace</div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="eyebrow">Our Story</span>
+        <span class="rule"></span>
+        <h2 class="sec-title">Rooted in Faith,<br/><em>Growing Together</em></h2>
+        <p class="sec-sub" style="margin-bottom:1.1rem;">AIC Yumbisye Township is a Spirit-led congregation committed to the transformative power of the Gospel — part of Africa Inland Church Kenya, one of Africa's most respected evangelical denominations.</p>
+        <p class="sec-sub" style="margin-bottom:2rem;">Since our founding we have been a beacon of hope, a centre of spiritual growth, and a family that walks together through every season of life.</p>
+        <div style="display:flex;gap:.9rem;flex-wrap:wrap;">
+          <a href="pages/about.html" class="btn btn-red">Our Full Story</a>
+          <a href="pages/contact.html" class="btn btn-ghost">Join Us Sunday</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCHEDULE ═══ -->
+<section class="sec-sm pattern">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;" class="reveal">
+      <div><span class="eyebrow">Join Us</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Weekly Services</h2></div>
+      <a href="pages/contact.html" class="btn btn-ghost btn-sm">Plan Your Visit →</a>
+    </div>
+    <div style="background:#fff;border-radius:var(--r-lg);border:1px solid var(--line);overflow:hidden;" class="reveal">
+      <div class="sched-row"><div><div class="fw6">Sunday Main Service</div><div class="text-xs text-muted mt1">Main Sanctuary · All Welcome</div></div><div class="text-red fw6">9:00 – 12:00 PM</div><div class="text-xs text-muted">Every Sunday</div></div>
+      <div class="sched-row"><div><div class="fw6">Sunday School</div><div class="text-xs text-muted mt1">Children's Hall · Ages 3–12</div></div><div class="text-red fw6">9:00 – 11:00 AM</div><div class="text-xs text-muted">Every Sunday</div></div>
+      <div class="sched-row"><div><div class="fw6">Wednesday Bible Study</div><div class="text-xs text-muted mt1">Fellowship Hall</div></div><div class="text-red fw6">6:00 – 8:00 PM</div><div class="text-xs text-muted">Wednesday</div></div>
+      <div class="sched-row"><div><div class="fw6">Friday Prayer Night</div><div class="text-xs text-muted mt1">Main Sanctuary · Intercessory</div></div><div class="text-red fw6">7:00 – 9:00 PM</div><div class="text-xs text-muted">Friday</div></div>
+      <div class="sched-row"><div><div class="fw6">Youth Fellowship</div><div class="text-xs text-muted mt1">Youth Hall · Ages 13–35</div></div><div class="text-red fw6">3:00 PM</div><div class="text-xs text-muted">Saturday</div></div>
+      <div class="sched-row"><div><div class="fw6">Women's Fellowship</div><div class="text-xs text-muted mt1">Fellowship Hall</div></div><div class="text-red fw6">5:00 PM</div><div class="text-xs text-muted">Thursday</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MINISTRIES TEASER ═══ -->
+<section class="sec bg-white">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;" class="reveal">
+      <div><span class="eyebrow">Ministries</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:.4rem;">Find Your Place to Serve</h2><p class="sec-sub">Every member is gifted. Every gift has a place.</p></div>
+      <a href="pages/ministries.html" class="btn btn-ghost btn-sm">All Ministries →</a>
+    </div>
+    <div class="g3">
+      <div class="card reveal" style="padding:1.75rem;">
+        <div class="min-icon" style="margin-bottom:1rem;"><i class="fas fa-fire"></i></div>
+        <h4 style="margin-bottom:.4rem;">Youth Ministry</h4>
+        <p class="text-sm text-muted" style="line-height:1.65;">Empowering the next generation with faith, purpose, and godly character.</p>
+        <a href="pages/ministries.html" class="teaser-more">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card reveal" style="padding:1.75rem;">
+        <div class="min-icon" style="margin-bottom:1rem;"><i class="fas fa-music"></i></div>
+        <h4 style="margin-bottom:.4rem;">Worship Team</h4>
+        <p class="text-sm text-muted" style="line-height:1.65;">Leading the congregation into God's presence through anointed praise and worship.</p>
+        <a href="pages/ministries.html" class="teaser-more">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card reveal" style="padding:1.75rem;">
+        <div class="min-icon" style="margin-bottom:1rem;"><i class="fas fa-globe-africa"></i></div>
+        <h4 style="margin-bottom:.4rem;">Outreach & Missions</h4>
+        <p class="text-sm text-muted" style="line-height:1.65;">Taking the love of Christ beyond our walls through evangelism and service.</p>
+        <a href="pages/ministries.html" class="teaser-more">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERMONS TEASER ═══ -->
+<section class="sec pattern">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;" class="reveal">
+      <div><span class="eyebrow">The Word</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Recent Sermons</h2></div>
+      <a href="pages/sermons.html" class="btn btn-ghost btn-sm">All Sermons →</a>
+    </div>
+    <div class="g3">
+      <div class="card reveal" style="display:flex;flex-direction:column;">
+        <div style="height:5px;background:var(--red);"></div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Sunday · Jun 2025</span>
+          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Walking in the Spirit</h3>
+          <p class="text-xs text-muted">Galatians 5:16–25 · Pastor James Mutua</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
+            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>45 min</span>
+            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal" style="display:flex;flex-direction:column;">
+        <div style="height:5px;background:var(--red);"></div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Bible Study · May 2025</span>
+          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Faith That Moves Mountains</h3>
+          <p class="text-xs text-muted">Matthew 17:20 · Deacon Peter Otieno</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
+            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>38 min</span>
+            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal" style="display:flex;flex-direction:column;">
+        <div style="height:5px;background:var(--red);"></div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Youth · Apr 2025</span>
+          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Purpose Over Pressure</h3>
+          <p class="text-xs text-muted">Jeremiah 29:11 · Evangelist Sarah W.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
+            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>52 min</span>
+            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PASTOR ═══ -->
+<section class="sec bg-dark">
+  <div class="wrap">
+    <div class="g2" style="align-items:center;gap:4rem;">
+      <div class="reveal-l" style="display:flex;justify-content:center;">
+        <div style="position:relative;width:min(300px,100%);">
+          <div style="position:absolute;inset:0;background:var(--red);border-radius:var(--r-lg);transform:rotate(3deg);opacity:.2;"></div>
+          <div style="position:relative;background:rgba(255,255,255,.04);border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.08);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+            <div style="text-align:center;color:rgba(255,255,255,.15);"><i class="fas fa-user-tie" style="font-size:5rem;display:block;margin-bottom:.5rem;"></i><span style="font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;">Pastor's Photo</span></div>
+            <div style="position:absolute;bottom:1.25rem;left:1.25rem;right:1.25rem;background:rgba(185,28,28,.9);border-radius:.65rem;padding:.9rem;">
+              <div style="color:#fff;font-weight:600;font-size:.9rem;">Pastor James Mutua</div>
+              <div style="color:rgba(255,255,255,.65);font-size:.75rem;">Senior Pastor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="eyebrow" style="color:rgba(255,255,255,.5);">Pastoral Message</span>
+        <span class="rule"></span>
+        <h2 class="sec-title text-white" style="margin-bottom:1.1rem;">A Word from<br/><em>Our Pastor</em></h2>
+        <p style="color:rgba(255,255,255,.55);font-family:Cormorant Garamond,serif;font-size:1.2rem;line-height:1.78;font-style:italic;margin-bottom:.9rem;">"Welcome to AIC Yumbisye Township — where broken lives are mended, doubting hearts renewed, and weary souls find rest."</p>
+        <p style="color:rgba(255,255,255,.45);line-height:1.8;margin-bottom:2rem;font-size:.95rem;">Whether you are a lifelong believer or searching for the first time, you will find a warm, accepting community walking together in the grace and truth of Jesus Christ.</p>
+        <a href="pages/about.html" class="btn btn-dark">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EVENTS TEASER ═══ -->
+<section class="sec bg-white">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;" class="reveal">
+      <div><span class="eyebrow">What's On</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Upcoming Events</h2></div>
+      <a href="pages/events.html" class="btn btn-ghost btn-sm">All Events →</a>
+    </div>
+    <div class="g3">
+      <div class="card reveal" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div style="background:var(--red);color:#fff;border-radius:.65rem;padding:.7rem .9rem;text-align:center;flex-shrink:0;min-width:3.4rem;">
+          <div style="font-family:Cinzel,serif;font-size:1.55rem;font-weight:600;line-height:1;">22</div>
+          <div style="font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;">Jun</div>
+        </div>
+        <div><h4 style="font-size:.95rem;margin-bottom:.3rem;">Church Anniversary Service</h4><p class="text-xs text-muted" style="line-height:1.6;">Special praise & worship celebrating God's faithfulness.</p><div class="text-xs text-muted mt2"><i class="fas fa-clock" style="color:var(--red);margin-right:.3rem;"></i>9:00 AM · Main Sanctuary</div></div>
+      </div>
+      <div class="card reveal" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div style="background:var(--ink);color:#fff;border-radius:.65rem;padding:.7rem .9rem;text-align:center;flex-shrink:0;min-width:3.4rem;">
+          <div style="font-family:Cinzel,serif;font-size:1.55rem;font-weight:600;line-height:1;">29</div>
+          <div style="font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;">Jun</div>
+        </div>
+        <div><h4 style="font-size:.95rem;margin-bottom:.3rem;">Youth Camp 2025</h4><p class="text-xs text-muted" style="line-height:1.6;">3-day spiritual retreat — "Set Apart for God's Purpose".</p><div class="text-xs text-muted mt2"><i class="fas fa-clock" style="color:var(--red);margin-right:.3rem;"></i>All Day · AICCK Camp</div></div>
+      </div>
+      <div class="card reveal" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div style="background:var(--red);color:#fff;border-radius:.65rem;padding:.7rem .9rem;text-align:center;flex-shrink:0;min-width:3.4rem;">
+          <div style="font-family:Cinzel,serif;font-size:1.55rem;font-weight:600;line-height:1;">06</div>
+          <div style="font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;">Jul</div>
+        </div>
+        <div><h4 style="font-size:.95rem;margin-bottom:.3rem;">Community Outreach Day</h4><p class="text-xs text-muted" style="line-height:1.6;">Door-to-door evangelism and free medical camp.</p><div class="text-xs text-muted mt2"><i class="fas fa-clock" style="color:var(--red);margin-right:.3rem;"></i>8:00 AM · Church Grounds</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY TEASER ═══ -->
+<section class="sec-sm bg-grey">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;" class="reveal">
+      <div><span class="eyebrow">Gallery</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Life at AIC Yumbisye</h2></div>
+      <a href="pages/gallery.html" class="btn btn-ghost btn-sm">View Full Gallery →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,180px);gap:.75rem;" class="reveal">
+      <div style="grid-row:span 2;border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?w=600&auto=format&fit=crop" alt="Worship" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+      <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop" alt="Fellowship" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+      <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=600&auto=format&fit=crop" alt="Youth" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+      <div style="grid-row:span 2;border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=600&auto=format&fit=crop" alt="Outreach" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+      <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1561649763-8c04a0dbfc6d?w=600&auto=format&fit=crop" alt="Community" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+      <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1593526613712-7b4b9a707330?w=600&auto=format&fit=crop" alt="Prayer" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
+    </div>
+    <style>@media(max-width:640px){.gal-grid{grid-template-columns:repeat(2,1fr)!important;grid-template-rows:auto!important;}}</style>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="sec bg-white">
+  <div class="wrap" style="max-width:720px;">
+    <div class="center reveal" style="margin-bottom:3rem;">
+      <span class="eyebrow">Testimonies</span>
+      <span class="rule center"></span>
+      <h2 class="sec-title">What God Has Done</h2>
+    </div>
+    <div class="reveal">
+      <div class="tslide on">
+        <div style="background:var(--bg-2);border-radius:var(--r-lg);padding:2.5rem;border-top:3px solid var(--red);">
+          <p style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-style:italic;line-height:1.75;color:var(--ink);margin-bottom:1.5rem;">"I walked into AIC Yumbisye broken and hopeless. Through the love of this community and God's Word, I found healing, restoration, and a new purpose."</p>
+          <div style="display:flex;align-items:center;gap:.75rem;"><div style="width:2.5rem;height:2.5rem;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:.9rem;">M</div><div><div class="fw6" style="font-size:.9rem;">Mary Wambui</div><div class="text-xs text-muted">Member since 2019</div></div></div>
+        </div>
+      </div>
+      <div class="tslide">
+        <div style="background:var(--bg-2);border-radius:var(--r-lg);padding:2.5rem;border-top:3px solid var(--red);">
+          <p style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-style:italic;line-height:1.75;color:var(--ink);margin-bottom:1.5rem;">"The Youth Ministry gave me direction when I was lost. The leaders prayed with me and helped me discover God's calling on my life. Forever grateful."</p>
+          <div style="display:flex;align-items:center;gap:.75rem;"><div style="width:2.5rem;height:2.5rem;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:.9rem;">D</div><div><div class="fw6" style="font-size:.9rem;">David Kamau</div><div class="text-xs text-muted">Youth Leader</div></div></div>
+        </div>
+      </div>
+      <div class="tslide">
+        <div style="background:var(--bg-2);border-radius:var(--r-lg);padding:2.5rem;border-top:3px solid var(--red);">
+          <p style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-style:italic;line-height:1.75;color:var(--ink);margin-bottom:1.5rem;">"Our marriage was restored and our children are thriving after counselling and prayer at AIC Yumbisye. All glory to Jesus!"</p>
+          <div style="display:flex;align-items:center;gap:.75rem;"><div style="width:2.5rem;height:2.5rem;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:.9rem;">J</div><div><div class="fw6" style="font-size:.9rem;">James & Grace Odhiambo</div><div class="text-xs text-muted">Members since 2021</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:.75rem;margin-top:1.25rem;" class="reveal">
+      <button id="tp" style="width:2.25rem;height:2.25rem;border-radius:50%;border:1.5px solid var(--red);background:transparent;color:var(--red);cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center;transition:all .25s;" onmouseover="this.style.background='var(--red)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'"><i class="fas fa-chevron-left"></i></button>
+      <button id="tn" style="width:2.25rem;height:2.25rem;border-radius:50%;border:1.5px solid var(--red);background:transparent;color:var(--red);cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center;transition:all .25s;" onmouseover="this.style.background='var(--red)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="padding-top:4rem;padding-bottom:2rem;">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;">
+      <div>
+        <div style="display:flex;align-items:center;gap:.65rem;margin-bottom:1rem;">
+          <img src="data:image/jpeg;base64,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" alt="AIC" style="width:38px;height:38px;border-radius:50%;border:2px solid var(--red);object-fit:contain;background:#fff;padding:1px;"/>
+          <div><div style="font-family:Cinzel,serif;color:#fff;font-size:.8rem;font-weight:600;letter-spacing:.06em;">AIC YUMBISYE</div><div style="font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);">Township</div></div>
+        </div>
+        <p style="line-height:1.75;margin-bottom:1.25rem;font-size:.875rem;">Africa Inland Church — proclaiming Christ, discipling nations, transforming communities since 1984.</p>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+          <a href="#" class="soc" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/channel/UCGUDxsDWmpTShlr178S-XfQ" target="_blank" class="soc" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="soc" aria-label="X/Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="soc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/254700000000" class="soc" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/ministries.html">Ministries</a>
+        <a href="pages/sermons.html">Sermons</a>
+        <a href="pages/events.html">Events</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/youtube.html">YouTube</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Service Times</h5>
+        <p style="margin-bottom:.5rem;font-size:.875rem;">Sun Service · 9 AM</p>
+        <p style="margin-bottom:.5rem;font-size:.875rem;">Sunday School · 9 AM</p>
+        <p style="margin-bottom:.5rem;font-size:.875rem;">Bible Study · Wed 6 PM</p>
+        <p style="margin-bottom:.5rem;font-size:.875rem;">Prayer Night · Fri 7 PM</p>
+        <p style="margin-bottom:.5rem;font-size:.875rem;">Youth · Sat 3 PM</p>
+        <p style="font-size:.875rem;">Women's · Thu 5 PM</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p style="margin-bottom:.6rem;font-size:.875rem;"><i class="fas fa-map-marker-alt" style="color:var(--red);margin-right:.4rem;"></i>Yumbisye Estate, Nairobi</p>
+        <p style="margin-bottom:.6rem;font-size:.875rem;"><i class="fas fa-phone" style="color:var(--red);margin-right:.4rem;"></i>+254 700 000 000</p>
+        <p style="margin-bottom:1.25rem;font-size:.875rem;"><i class="fas fa-envelope" style="color:var(--red);margin-right:.4rem;"></i>info@aicyumbisye.org</p>
+        <button onclick="openP()" class="btn btn-sm" style="background:var(--red);color:#fff;border-color:var(--red);">🙏 Prayer Request</button>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <p style="font-size:.8rem;">© <span id="yr"></span> Africa Inland Church Yumbisye Township. All rights reserved.</p>
+      <p style="font-size:.8rem;color:rgba(255,255,255,.25);">Built to the glory of God ✝</p>
+    </div>
+  </div>
+</footer>
+<style>@media(max-width:860px){footer .wrap > div:first-child{grid-template-columns:1fr 1fr !important}}</style>
+<style>@media(max-width:500px){footer .wrap > div:first-child{grid-template-columns:1fr !important}}</style>
+<div id="pmodal" style="position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:1rem;" onclick="closePBg(event)">
+  <div id="pbox" style="background:#fff;border-radius:1.25rem;max-width:460px;width:100%;padding:2.5rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.2);">
+    <button onclick="closeP()" style="position:absolute;top:1rem;right:1rem;width:2rem;height:2rem;border-radius:50%;background:var(--bg-2);border:none;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;transition:background .2s;" onmouseover="this.style.background='var(--red)';this.style.color='#fff'" onmouseout="this.style.background='var(--bg-2)';this.style.color='inherit'">✕</button>
+    <div style="text-align:center;margin-bottom:1.75rem;">
+      <div style="width:3rem;height:3rem;background:var(--red-s);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto .9rem;font-size:1.3rem;">🙏</div>
+      <h3 style="font-family:Cormorant Garamond,serif;font-size:1.75rem;font-weight:600;margin-bottom:.3rem;">Prayer Request</h3>
+      <p style="color:var(--ink-3);font-size:.875rem;">Share your heart — our team will intercede for you.</p>
+    </div>
+    <div id="pform" style="display:flex;flex-direction:column;gap:.9rem;">
+      <input id="prn" type="text" placeholder="Your Name" class="inp"/>
+      <input id="pre" type="email" placeholder="Email (optional)" class="inp"/>
+      <textarea id="prr" placeholder="Write your prayer request here…" class="inp"></textarea>
+      <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ink-3);cursor:pointer;">
+        <input type="checkbox" style="accent-color:var(--red);"> Submit anonymously
+      </label>
+      <button onclick="submitP()" class="btn btn-red" style="width:100%;justify-content:center;">Submit Request</button>
+    </div>
+    <div id="pok" style="display:none;text-align:center;padding:1rem 0;">
+      <div style="font-size:2.5rem;margin-bottom:.75rem;">🙏</div>
+      <h4 style="font-size:1.1rem;font-weight:600;margin-bottom:.3rem;">Received!</h4>
+      <p style="color:var(--ink-3);font-size:.875rem;">Our prayer team will lift your request to the Lord. Be blessed!</p>
+    </div>
+  </div>
+</div><a href="https://wa.me/254700000000?text=Hello%20AIC%20Yumbisye!" target="_blank" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script>
+// ── Nav scroll (single bar) ──────────────────────────────
+const nav = document.getElementById('nav');
+function syncNav(){
+  if(window.scrollY > 40){ nav.classList.add('scrolled'); nav.classList.remove('dark-hero'); }
+  else { nav.classList.remove('scrolled'); if(nav.dataset.dark) nav.classList.add('dark-hero'); }
+}
+window.addEventListener('scroll', syncNav, {passive:true});
+syncNav();
+
+// ── Mobile menu ──────────────────────────────────────────
+document.getElementById('burger').addEventListener('click',()=>{
+  const m = document.getElementById('mob-nav');
+  m.style.display = m.style.display === 'block' ? 'none' : 'block';
+});
+
+// ── Scroll reveal ────────────────────────────────────────
+const ro = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('up'); ro.unobserve(e.target); } });
+},{threshold:.1});
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>ro.observe(el));
+
+// ── Prayer modal ─────────────────────────────────────────
+function openP(){ document.getElementById('pmodal').classList.add('on'); }
+function closeP(){
+  document.getElementById('pmodal').classList.remove('on');
+  document.getElementById('pok').style.display='none';
+  document.getElementById('pform').style.display='flex';
+}
+function closePBg(e){ if(e.target===document.getElementById('pmodal')) closeP(); }
+function submitP(){
+  if(!document.getElementById('prr').value.trim()){ alert('Please write your prayer request.'); return; }
+  document.getElementById('pform').style.display='none';
+  document.getElementById('pok').style.display='block';
+  setTimeout(closeP,4000);
+}
+
+// ── Footer year ──────────────────────────────────────────
+const yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+</script><script>
+// Slider
+const slides=document.querySelectorAll('.hslide'),dots=document.querySelectorAll('.hdot');
+let cur=0;
+function goS(n){slides[cur].classList.remove('on');dots[cur].classList.remove('on');cur=(n+slides.length)%slides.length;slides[cur].classList.add('on');dots[cur].classList.add('on');}
+dots.forEach((d,i)=>d.addEventListener('click',()=>goS(i)));
+setInterval(()=>goS(cur+1),6000);
+// Hero word stagger
+document.querySelectorAll('.hw').forEach((w,i)=>{w.style.animationDelay=(.3+i*.13)+'s';});
+// Dark hero flag
+document.getElementById('nav').dataset.dark='1';
+// Countdown
+function nxtSun(){const n=new Date(),d=n.getDay(),du=d===0?7:7-d,s=new Date(n);s.setDate(n.getDate()+du);s.setHours(9,0,0,0);return s;}
+function tick(){const diff=nxtSun()-new Date();if(diff<=0)return;const D=Math.floor(diff/86400000),H=Math.floor(diff%86400000/3600000),M=Math.floor(diff%3600000/60000),S=Math.floor(diff%60000/1000);['cdd','cdh','cdm','cds'].forEach((id,i)=>{const el=document.getElementById(id);if(el)el.textContent=String([D,H,M,S][i]).padStart(2,'0');});}
+tick();setInterval(tick,1000);
+// Testimonials
+const ts=document.querySelectorAll('.tslide');let tc=0;
+function showT(n){ts[tc].classList.remove('on');tc=(n+ts.length)%ts.length;ts[tc].classList.add('on');}
+document.getElementById('tp')?.addEventListener('click',()=>showT(tc-1));
+document.getElementById('tn')?.addEventListener('click',()=>showT(tc+1));
+setInterval(()=>showT(tc+1),8000);
+</script></body></html>
