@@ -32,6 +32,15 @@
 .card:hover .min-icon{background:var(--red);color:#fff;}
 .play-btn{width:2.5rem;height:2.5rem;border-radius:50%;background:var(--red);border:none;cursor:pointer;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .25s;flex-shrink:0;}
 .play-btn:hover{transform:scale(1.1);box-shadow:0 4px 14px rgba(185,28,28,.4);}
+@media(max-width:640px){
+  .gal-home{
+    grid-template-columns:repeat(2,1fr) !important;
+    grid-template-rows:repeat(3,160px) !important;
+  }
+  .gal-home > div[style*="grid-row:span 2"]{
+    grid-row: span 1 !important;
+  }
+}
 </style>
 </head>
 <body><div id="nav-placeholder"></div>
@@ -198,51 +207,136 @@
   </div>
 </section>
 
-<!-- ═══ SERMONS TEASER ═══ -->
+<!-- ═══ MISSION, VISION & STATEMENT OF FAITH ═══ -->
 <section class="sec pattern">
   <div class="wrap">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;" class="reveal">
-      <div><span class="eyebrow">The Word</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Recent Sermons</h2></div>
-      <a href="pages/sermons.html" class="btn btn-ghost btn-sm">All Sermons →</a>
+
+    <!-- Mission & Vision row -->
+    <div class="g2 reveal" style="gap:2.5rem;margin-bottom:3.5rem;">
+
+      <!-- Our Mission -->
+      <div class="card" style="padding:2rem;border-top:4px solid var(--red);">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;">
+          <div class="min-icon"><i class="fas fa-bullseye"></i></div>
+          <div>
+            <span class="eyebrow" style="margin-bottom:0;">Purpose</span>
+            <h3 style="font-size:1.4rem;margin:0;">Our Mission</h3>
+          </div>
+        </div>
+        <p style="line-height:1.8;color:var(--muted);font-size:.97rem;">
+          To glorify God by making disciples of Jesus Christ through preaching the Word, worship, fellowship, and
+          service to our community. We exist to connect people to Christ, grow them in faith, and equip them to impact
+          Yumbisye and beyond.
+        </p>
+      </div>
+
+      <!-- Our Vision -->
+      <div class="card" style="padding:2rem;border-top:4px solid var(--red);">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;">
+          <div class="min-icon"><i class="fas fa-eye"></i></div>
+          <div>
+            <span class="eyebrow" style="margin-bottom:0;">Direction</span>
+            <h3 style="font-size:1.4rem;margin:0;">Our Vision</h3>
+          </div>
+        </div>
+        <p style="line-height:1.8;color:var(--muted);font-size:.97rem;">
+          To be a biblically grounded, Christ-centered church where believers are transformed, families are
+          strengthened, and lives reflect God's love in word and action.
+        </p>
+      </div>
+
     </div>
-    <div class="g3">
-      <div class="card reveal" style="display:flex;flex-direction:column;">
-        <div style="height:5px;background:var(--red);"></div>
-        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
-          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Sunday · Jun 2025</span>
-          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Walking in the Spirit</h3>
-          <p class="text-xs text-muted">Galatians 5:16–25 · Pastor Kelvin</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
-            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>45 min</span>
-            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
-          </div>
-        </div>
+
+    <!-- Statement of Faith -->
+    <div class="reveal">
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <span class="eyebrow">Doctrine</span><span class="rule" style="display:block;margin:.4rem auto 0;"></span>
+        <h2 class="sec-title" style="margin-bottom:.5rem;">Our Statement of Faith</h2>
+        <p class="sec-sub">The core convictions that anchor everything we believe and do.</p>
       </div>
-      <div class="card reveal" style="display:flex;flex-direction:column;">
-        <div style="height:5px;background:var(--red);"></div>
-        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
-          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Bible Study · May 2025</span>
-          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Faith That Moves Mountains</h3>
-          <p class="text-xs text-muted">Matthew 17:20 · Deacon Peter Otieno</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
-            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>38 min</span>
-            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
+      <div class="g3" style="gap:1.25rem;">
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            1</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">The Bible</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe the Holy Scriptures are inspired by God,
+              without error, and are our final authority for faith and life.</p>
           </div>
         </div>
-      </div>
-      <div class="card reveal" style="display:flex;flex-direction:column;">
-        <div style="height:5px;background:var(--red);"></div>
-        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
-          <span style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;display:block;">Youth · Apr 2025</span>
-          <h3 style="font-size:1.3rem;margin-bottom:.4rem;flex:1;">Purpose Over Pressure</h3>
-          <p class="text-xs text-muted">Jeremiah 29:11 · Evangelist Sarah W.</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);">
-            <span class="text-xs text-muted"><i class="fas fa-clock" style="margin-right:.3rem;color:var(--red);"></i>52 min</span>
-            <button class="play-btn"><i class="fas fa-play" style="margin-left:2px;"></i></button>
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            2</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">God</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe in one God eternally existing in three
+              persons — Father, Son, and Holy Spirit.</p>
           </div>
         </div>
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            3</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">Jesus Christ</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe Jesus is the Son of God, who died for our
+              sins, rose bodily from the dead, and is the only way to salvation.</p>
+          </div>
+        </div>
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            4</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">Salvation</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe salvation is by grace through faith in
+              Christ alone.</p>
+          </div>
+        </div>
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            5</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">The Holy Spirit</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe the Holy Spirit indwells believers,
+              empowers holy living, and equips the church for service.</p>
+          </div>
+        </div>
+
+        <div class="card" style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            6</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">The Church</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe the church is the body of Christ, called
+              to worship God, make disciples, and serve the world.</p>
+          </div>
+        </div>
+
+        <div class="card reveal"
+          style="padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;grid-column:1/-1;max-width:480px;margin:0 auto;">
+          <div
+            style="min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--red-s);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;">
+            7</div>
+          <div>
+            <h4 style="margin-bottom:.3rem;font-size:.95rem;">Eternity</h4>
+            <p class="text-sm text-muted" style="line-height:1.7;">We believe in the bodily resurrection of all people —
+              the saved to eternal life with God, and the lost to judgment.</p>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </div>
 </section>
 
@@ -314,7 +408,7 @@
       <div><span class="eyebrow">Gallery</span><span class="rule"></span><h2 class="sec-title" style="margin-bottom:0;">Life at AIC Yumbisye</h2></div>
       <a href="pages/gallery.html" class="btn btn-ghost btn-sm">View Full Gallery →</a>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,180px);gap:.75rem;" class="reveal">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,180px);gap:.75rem;" class="reveal gal-home">
       <div style="grid-row:span 2;border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?w=600&auto=format&fit=crop" alt="Worship" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
       <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop" alt="Fellowship" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
       <div style="border-radius:var(--r);overflow:hidden;"><img src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=600&auto=format&fit=crop" alt="Youth" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"/></div>
